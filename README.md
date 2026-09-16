@@ -1,2 +1,0 @@
-
-# ansible_tower_deploy_terraform
