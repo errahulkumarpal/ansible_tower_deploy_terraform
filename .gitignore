@@ -1,3 +1,4 @@
+**/.*
 
 # Ignore a hidden dot folder anywhere in the project
 .terraform/
