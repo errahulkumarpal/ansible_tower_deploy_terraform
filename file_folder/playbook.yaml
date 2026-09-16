@@ -1,0 +1,16 @@
+---
+- name: Edit existing file
+  hosts: webservers
+  tasks:
+    - name: Text output
+      ansible.builtin.debug:
+        msg: "check all playbook executed"
+
+    - name: Replace a line in the file
+      ansible.builtin.ping:
+
+    - name: Create a file with content
+      ansible.builtin.file:
+        path: /home/ec2-user/empty_file.txt
+        state: touch
+        mode: '0644'

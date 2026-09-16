@@ -1,0 +1,9 @@
+# templates/hosts.tftpl
+[webservers]
+%{ for instance in web_instances ~}
+${instance.name} ansible_host=${instance.public_ip} ansible_user=${ssh_user}
+%{ endfor ~}
+
+[all:vars]
+ansible_ssh_private_key_file=${ssh_key_path}
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
