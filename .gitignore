@@ -7,7 +7,7 @@ key/
 
 readme.md
 .DS_Store
-/terrform.tfstate.backup
-/terraform-error.log
-/.terraform.lock.hcl
+terrform.tfstate.backup
+terraform-error.log
+.terraform.lock.hcl
 terraform.tfstate.backup
